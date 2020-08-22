@@ -92,4 +92,5 @@ nav a:hover {
   transition: all 0.5s;
   background-color: black;
   color: white;
+   border: 1px solid white;
 }
