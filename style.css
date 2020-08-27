@@ -1,21 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
 }
 
 header {
   width: 100%;
-  height: 70px;
-  background-color: #0089ba;
+  height: 40px;
+  background-color: white;
   text-align: center;
-  color: blanchedalmond;
-  padding-top: 30px;
+  color: coral;
+  padding-top: 5px;
   font-size: 30px;
+  font-weight: 550;
 }
 nav {
   width: 100%;
-  height: 35px;
-  background-color: #4b4453;
+  height: 40px;
+  background-color: #f16334;
 }
 
 nav ul {
@@ -23,19 +26,19 @@ nav ul {
   margin: 0px;
   padding: 0px;
 }
-nav ul li {
-  display: inline-flex;
-  margin-left: 50px;
+nav ul li:not(.contact) {
+  float: left;
+  margin-left: 0px;
 }
 nav ul li a {
   text-decoration: none;
   display: block;
-  width: 80px;
-  height: 27px;
+  width: 130px;
+  height: 32px;
   color: white;
   text-align: center;
   padding-top: 8px;
-  background-color: #b89a09;
+  background-color: #f16334;
 }
 .dropdown {
   position: relative;
@@ -45,7 +48,7 @@ nav ul li a {
   top: 5px;
   position: absolute;
   transition: all 150ms ease-in;
-  left: -50px;
+  left: 0px;
   background-color: transparent;
 }
 .dp-content ul {
@@ -56,7 +59,7 @@ nav ul li a {
 
 .dp-content ul li a {
   text-decoration: none;
-  color: darkslateblue;
+  color: white;
   border-bottom: 1px solid #0089ba;
   display: block;
 }
@@ -72,8 +75,11 @@ nav ul li a {
 }
 .container {
   width: 100%;
-  height: 600px;
+  height: 990px;
   background-color: darkgray;
+  padding-top: 10px;
+  background: url(images/bg.jpg) no-repeat;
+  background-size: cover;
 }
 footer {
   text-align: center;
@@ -88,9 +94,20 @@ footer {
 #eseb {
   border-radius: 0px 0px 10px 10px;
 }
-nav a:hover {
+nav a:hover:not(.active) {
   transition: all 0.5s;
   background-color: black;
   color: white;
-
+}
+.active {
+  background-color: crimson;
+}
+#contact {
+  float: right;
+}
+.content {
+  width: 1250px;
+  height: 1000px;
+  background-color: transparent;
+  margin: 0px auto;
 }
