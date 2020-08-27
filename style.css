@@ -157,7 +157,7 @@ nav a:hover:not(.active) {
     z-index: 10;
     width: 200px;
     height: 300px;
-    display: block;
+    display: none;
     position: absolute;
     background-color: crimson;
 
@@ -180,5 +180,9 @@ nav a:hover:not(.active) {
     height: 30px;
     width: 100px;
     padding-left: 70px;
+  }
+  section {
+    width: 10%;
+    overflow: hidden;
   }
 }
