@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  color: coral;
+  padding-top: 5px;
+  font-size: 30px;
+  font-weight: 550;
+}
+nav {
+  width: 100%;
+  height: 40px;
+  background-color: #f16334;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li:not(.contact) {
+  float: left;
+  margin-left: 0px;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 130px;
+  height: 32px;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  background-color: #f16334;
+}
+.dropdown {
+  position: relative;
+}
+.dp-content {
+  visibility: hidden;
+  top: 5px;
+  position: absolute;
+  transition: all 150ms ease-in;
+  left: 0px;
+  background-color: transparent;
+}
+.dp-content ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dp-content ul li a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #0089ba;
+  display: block;
+}
+.dropdown:hover .dp-content {
+  visibility: visible;
+  top: 35px;
+}
+.dp-content ul li a:hover {
+  border: 1px solid white;
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+}
+.container {
+  width: 100%;
+  height: 990px;
+  background-color: darkgray;
+  padding-top: 10px;
+  background: url(images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+footer {
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  background-color: darkgreen;
+  padding-top: 20px;
+}
+#ananas {
+  border-top: 1px solid #0089ba;
+}
+#eseb {
+  border-radius: 0px 0px 10px 10px;
+}
+nav a:hover:not(.active) {
+  transition: all 0.5s;
+  background-color: black;
+  color: white;
+}
+.active {
+  background-color: crimson;
+}
+#contact {
+  float: right;
+}
+.content {
+  width: 1250px;
+  height: 1000px;
+  background-color: transparent;
+  margin: 0px auto;
+}
