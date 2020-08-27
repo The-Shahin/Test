@@ -125,24 +125,23 @@ nav a:hover:not(.active) {
 @media only screen and (max-width: 600px) {
   nav ul li a,
   .active {
-    width: 100px;
     display: none;
   }
+
   .resp {
     display: block;
     background: url(images/resplogo.png) center no-repeat;
     background-size: cover;
+    height: 50px;
   }
-  .respmenuopen {
-    display: none;
-  }
+
   .respdiv {
     margin-left: 150px;
     padding-top: 5px;
     float: left;
   }
   nav {
-    height: 50px;
+    height: 64px;
   }
   .respmenu {
     float: left;
@@ -152,6 +151,7 @@ nav a:hover:not(.active) {
     width: 50px;
     cursor: pointer;
     position: relative;
+    margin-top: 9px;
   }
   .respmenuopen {
     z-index: 10;
@@ -160,29 +160,26 @@ nav a:hover:not(.active) {
     display: none;
     position: absolute;
     background-color: crimson;
-
-    transition: all 150ms;
+    top: -9px;
+    transition: all 1s;
   }
   .respmenu:hover .respmenuopen {
     display: block;
+    transition: all 1s;
   }
-  .respmenuopen ul {
+  .respmenuopen a {
     margin: 0px;
     padding: 0px;
   }
-  .respmenuopen ul li {
-    list-style: none;
-  }
-  .respmenuopen ul li {
+  .respmenuopen a {
     display: block;
     text-decoration: none;
-    padding: 20px;
-    height: 30px;
-    width: 100px;
-    padding-left: 70px;
+    padding: 10px 20px 0px 0px;
+    height: 40px;
+    width: 180px;
+    border-bottom: 1px solid #444;
   }
   section {
-    width: 10%;
     overflow: hidden;
   }
 }
