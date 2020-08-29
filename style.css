@@ -115,6 +115,7 @@ nav a:hover:not(.active) {
   margin: 0px auto;
   opacity: 0.9;
   padding-top: 15px;
+  position: relative;
 }
 .resp {
   display: none;
@@ -125,13 +126,18 @@ nav a:hover:not(.active) {
 .news {
   width: 300px;
   height: 200px;
-  background-color: aqua;
+  background-color: transparent;
   margin: 10px 20px 0px 10px;
   border-radius: 15px;
   float: left;
 }
-#fst {
-  margin-left: 25px;
+.updiv {
+  margin: 0px auto;
+  background-color: transparent;
+  width: 1320px;
+  height: 200px;
+  float: none;
+  margin-bottom: 50px;
 }
 .pic {
   width: 300px;
@@ -227,5 +233,12 @@ nav a:hover:not(.active) {
   }
   .container {
     padding: 0px;
+    height: 2000px;
+  }
+  .updiv {
+    width: 350px;
+    height: 880px;
+    margin: 0px auto;
+    float: none;
   }
 }
