@@ -130,6 +130,9 @@ nav a:hover:not(.active) {
   border-radius: 15px;
   float: left;
 }
+#fst {
+  margin-left: 25px;
+}
 .pic {
   width: 300px;
   height: 150px;
