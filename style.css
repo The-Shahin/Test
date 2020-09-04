@@ -147,6 +147,7 @@ nav {
     height: 880px;
     margin: 0px auto;
     float: none;
+    overflow-y: hidden;
   }
   .burger {
     display: block;
