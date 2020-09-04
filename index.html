@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0"
       ,shrink-to-fit="no"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
     <title>Ana səhifə</title>
   </head>
@@ -15,79 +15,25 @@
     <main>
       <header>Texnologiya xeberleri</header>
       <nav>
-        <ul>
-          <li>
-            <div class="respmenu">
-              <div class="respmenuopen">
-                <a href="" id="closerespopen">Close Tab</a>
-                <a href="">ASAP</a>
-                <a href="">ASAP</a>
-                <a href="">ASAP</a>
-                <a href="">ASAP</a>
-                <a href="">ASAP</a>
-              </div>
-            </div>
-            <div class="respdiv">
-              <a href="index.html" class="resp"> </a>
-            </div>
-          </li>
+        <div class="nav-logo">Ana Səhifə</div>
+        <ul class="nav-links">
+          <li><a href="#">Tezliklə</a></li>
+          <li><a href="#">Tezliklə</a></li>
+          <li><a href="#">Tezliklə</a></li>
+          <li><a href="#">Tezliklə</a></li>
         </ul>
-        <ul>
-          <li class="dropdown">
-            <a href="index.html" class="active">Ana səhifə</a>
-          </li>
-
-          <div class="dp-content">
-            <ul>
-              <li id="ananas"><a href="">ASAP</a></li>
-              <li><a href="">ASAP</a></li>
-              <li><a href="">ASAP</a></li>
-              <li><a id="eseb" href="">ASAP</a></li>
-            </ul>
-          </div>
-          <li class="dropdown" style="border-right: 3px solid crimson">
-            <a href="#">ASAP</a>
-            <div class="dp-content">
-              <ul>
-                <li id="ananas"><a href="">ASAP</a></li>
-                <li><a href="">ASAP</a></li>
-                <li><a href="">ASAP</a></li>
-                <li><a id="eseb" href="">ASAP</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="dropdown" style="border-right: 3px solid crimson">
-            <a href="#">ASAP</a>
-            <div class="dp-content">
-              <ul>
-                <li id="ananas"><a href="">ASAP</a></li>
-                <li><a href="">ASAP</a></li>
-                <li><a href="">ASAP</a></li>
-                <li><a id="eseb" href="">ASAP</a></li>
-              </ul>
-            </div>
-          </li>
-          <li
-            class="dropdown contact"
-            style="float: right; border-left: 3px solid crimson"
-          >
-            <a href="#">Əlaqə</a>
-          </li>
-        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
-
       <section class="container">
         <div class="content">
           <div class="updiv">
             <div class="news">
               <div class="pic">
-                <a href="/pages/ilk.html"
-                  ><img
-                    src="/images/ilkpic.jpg"
-                    width="295"
-                    height="150"
-                    style="border-radius: 15px 15px 0 0"
-                /></a>
+                <a href="/pages/ilk.html"></a>
               </div>
               <div class="title">
                 <a href="pages/ilk.html">Sabah qruplari 2020 qebulu</a>
@@ -140,7 +86,33 @@
           </div>
         </div>
       </section>
+      /*
       <footer>Alpha</footer>
     </main>
+    <script>
+      const navShow = () => {
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        burger.addEventListener("click", () => {
+          nav.classList.toggle("nav-active");
+
+          links.forEach((link, index) => {
+            if (link.style.animation) {
+              link.style.animation = "";
+            } else {
+              link.style.animation = `linksFade 0.5s ease forwards ${
+                index / 5 + 0.2
+              }s`;
+            }
+          });
+
+          burger.classList.toggle("close");
+        });
+      };
+
+      navShow();
+    </script>
   </body>
 </html>
