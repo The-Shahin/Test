@@ -4,6 +4,7 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   letter-spacing: 1.3px;
+  overflow-x: hidden;
 }
 
 header {
@@ -141,13 +142,6 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    overflow: hidden;
-    overflow-x: hidden;
-  }
-  section {
-    overflow: hidden;
-  }
   .updiv {
     width: 340px;
     height: 880px;
@@ -159,7 +153,7 @@ nav {
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 73px;
     right: 0;
     width: 60%;
@@ -214,4 +208,22 @@ nav {
 .container {
   padding: 0px;
   height: 2000px;
+}
+@media screen and (max-width: 400px) {
+  .nav-links {
+    position: absolute;
+    top: 73px;
+    body {
+      overflow-x: hidden;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-links {
+    position: absolute;
+    top: 73px;
+    body {
+      overflow-x: hidden;
+    }
+  }
 }
